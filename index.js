@@ -22,6 +22,8 @@ function viewCart() {
     }
     else if (cart.length === 2) {
       return `${sent} ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`
+    } else {
+      return `Your shopping cart is empty.`
     }
   }
 
