@@ -15,8 +15,9 @@ function addToCart(item) {
  }
 
 function viewCart() {
-  // write your code here
-}
+  cart.forEach(item => {
+    console.log(`In your cart, you have ${} at ${itemPrice}`).toString
+  })
 
 function total() {
   // write your code here
