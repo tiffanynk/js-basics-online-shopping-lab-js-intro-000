@@ -20,11 +20,11 @@ function viewCart() {
   } else if (cart.length > 0) {
     let listCart = cart.map((item, index) => {
     if (index === 0) {
-      return   `In your cart, you have ${item.itemName} at ${itemPrice}`
+      return   `In your cart, you have ${item.itemName} at ${item.itemPrice}`
     } else if (cart[index+1]){
-      return `, ${item.itemName} at ${itemPrice}`
+      return `, ${item.itemName} at ${item.itemPrice}`
     } else {
-      return `, ${item.itemName} at ${itemPrice}`
+      return `, ${item.itemName} at ${item.itemPrice}`
     }
     return listCart.join(',') + '.'
     })
