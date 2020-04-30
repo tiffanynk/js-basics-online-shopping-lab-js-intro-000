@@ -36,7 +36,7 @@ function viewCart() {
   }
 
 function total() {
-  let cartSum = 0
+  const cartSum = 0
   for (let i = 0; i < cart.length; i++) {
     cartSum += cart[i].itemPrice;
   }
@@ -58,5 +58,9 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   if (cardNumber === undefined) {
     return 'Sorry, we don\'t have a credit card on file for you.'
+  }
+  else {
+    const cart = [];
+
   }
 }
