@@ -25,9 +25,9 @@ function viewCart() {
       return `, ${itemName} at ${itemPrice}`
     } else {
       return `, ${itemName} at ${itemPrice}`
-    } return listCart}
-  )
-
+    } 
+    return listCart.join(',') + '.'
+    })
   }
 }
 function total() {
