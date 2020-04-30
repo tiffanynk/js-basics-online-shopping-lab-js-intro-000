@@ -22,7 +22,7 @@ function viewCart() {
       return fSent + ".";
     }
     else if (cart.length >= 2) {
-      return `${fSent}, and ${cart[i].itemName} at $${cart[i].itemPrice} and ${cart[i].itemName} at $${cart[i].itemPrice}.`
+      return `${fSent}, ${cart[i].itemName} at $${cart[i].itemPrice} and ${cart[i].itemName} at $${cart[i].itemPrice}.`
     }
   }
 
