@@ -15,9 +15,11 @@ function addToCart(item) {
  }
 
 function viewCart() {
-  cart.forEach(item => {
-    console.log(`In your cart, you have ${item} at ${itemPrice}`).toString()
-  })
+for (let i = 0; i < cart.length; i++) {
+  if (cart.length = 0) {
+    return `Your shopping cart is empty.`
+  }
+}
 }
 function total() {
   // write your code here
