@@ -18,10 +18,11 @@ function viewCart() {
   var sent = 'In your cart, you have';
   for (let i = 0; i < cart.length; item++) {
     if (cart.length === 1) {
-      return `${sent} ${cart[i].itemName} at $${cart[i].itemPrice}.`
+      let fSent = `${sent} ${cart[0].itemName} at $${cart[0].itemPrice}`
+      return fSent + ".";
     }
-    else if (cart.length === 2) {
-      return `${sent} ${cart[i].itemName} at $${cart[i].itemPrice} and ${cart[i].itemName} at $${cart[i].itemPrice}.`
+    else if (cart.length >= 2) {
+      return `${fSent}, and ${cart[i].itemName} at $${cart[i].itemPrice} and ${cart[i].itemName} at $${cart[i].itemPrice}.`
     }
   }
 
