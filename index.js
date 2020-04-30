@@ -17,6 +17,17 @@ function addToCart(item) {
 function viewCart() {
   if (cart.length === 0) {
     return "Your shopping cart is empty."
+  } else if (cart.length > 0) {
+    let listCart = cart.map((item, index) => 
+    if (index === 0) {
+      return   `In your cart, you have ${itemName} at ${itemPrice}`
+    } else if (cart[index+1]){
+      return `, ${itemName} at ${itemPrice}`
+    } else {
+      return `, ${itemName} at ${itemPrice}`
+    } console.log(listCart)
+  )
+
   }
 }
 function total() {
