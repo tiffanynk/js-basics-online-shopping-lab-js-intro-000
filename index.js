@@ -17,7 +17,7 @@ function addToCart(item) {
 function viewCart() {
   var sent = 'In your cart, you have';
   for (let i = 0; i < cart.length; item++) {
-    if (cart.length === 1) {
+    if (i === cart.length - 1) {
       return `${sent} ${cart[i].itemName} at $${cart[i].itemPrice}.`
     }
     else if (cart.length === 2) {
