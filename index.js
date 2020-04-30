@@ -21,7 +21,7 @@ function viewCart() {
   } else if (cart.length === 1) {
     return `${sent} ${cart[0].itemName} at $${cart[0].itemPrice}.`
   } else if (cart.length === 2) {
-    return `${sent} ${cart[i].itemName} at $${cart[i].itemPrice}, and ${cart[0].itemName} at $${cart[0].itemPrice}.`
+    return `${sent} ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`
   }
 
 }
