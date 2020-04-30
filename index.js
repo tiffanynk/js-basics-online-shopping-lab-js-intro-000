@@ -25,7 +25,7 @@ function viewCart() {
       return `, ${itemName} at ${itemPrice}`
     } else {
       return `, ${itemName} at ${itemPrice}`
-    } console.log(listCart)}
+    } return listCart
   )
 
   }
