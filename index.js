@@ -21,7 +21,7 @@ function viewCart() {
     let listCart = cart.map((item, index) => {
     if (index === 1) {
       return   `In your cart, you have ${item.itemName} at ${item.itemPrice}`
-    } else if (cart[index+1]){
+    } else if (cart[index+1] !== undefined){
       return `, ${item.itemName} at ${item.itemPrice}`
     } else {
       return `, ${item.itemName} at ${item.itemPrice}`
