@@ -20,9 +20,6 @@ function viewCart() {
     if (cart.length === 1 {
       return `${sent} ${cart[i].itemName} at $${cart[i].itemPrice}.`
     }
-    else {
-      return 'Your shopping cart is empty.'
-    }
   }
 
 }
