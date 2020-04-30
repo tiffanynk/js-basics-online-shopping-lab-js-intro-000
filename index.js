@@ -44,10 +44,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (item === cart[i].itemName) {
-    cart.splice(i, 1);
-    return cart;
+  for (i = 0; i < cart.length; i++) {
+    if (item === cart[i].itemName) {
+      cart.splice(i, 1);
+      return cart;
+    }
   }
+  
 }
 
 function placeOrder(cardNumber) {
